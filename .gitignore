@@ -1,0 +1,25 @@
+# Node.js
+node_modules/
+
+# TypeScript
+dist/
+*.tsbuildinfo
+
+# Environment variables
+.env
+
+# Log files
+logs/
+*.log
+
+# IDE and editor configuration files
+.vscode/
+.idea/
+
+# Operating system-specific files
+.DS_Store
+Thumbs.db
+
+# Images for development
+src/images
+eng.traineddata
