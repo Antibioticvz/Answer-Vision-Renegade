@@ -62,10 +62,10 @@ To easily save screenshots to the `/src/images` folder in this project, you can 
 1. Open **System Preferences** > **Keyboard** > **Shortcuts**.
 2. Click on **Screen Shots** in the left sidebar.
 3. Double-click on **Save screen shot to Pictures folder** and press your desired key combination (e.g., `Command + Option + S`).
-4. Release the keys, then click on the text field next to it and navigate to your project's `/src/images` folder.
+4. Release the keys, then click on the text field next to it and navigate to your project's `/dist/images` folder.
 5. Click **Save**.
 
-Now you can take screenshots using your keyboard shortcut, and they will be saved directly to the `/src/images` folder in this project.
+Now you can take screenshots using your keyboard shortcut, and they will be saved directly to the `/dist/images` folder in this project.
 
 ### Contributing
 
