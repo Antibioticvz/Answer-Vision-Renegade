@@ -1,4 +1,4 @@
-import { extractTextFromImage } from "./utils"
+import { extractTextFromImage } from './utils'
 
 const handleNewFile = async (
   imagePath: string,
@@ -6,15 +6,15 @@ const handleNewFile = async (
   tesseractLang: string
 ) => {
   const extractedText = await extractTextFromImage(imagePath, tesseractLang)
-  console.log("\x1b[35mExtracted text: \x1b[0m")
+  console.log('\x1b[35mExtracted text: \x1b[0m')
   console.log(extractedText)
 
   try {
     const answer = await service.getAnswerFromText(extractedText)
     console.log(`\x1b[32m ${answer} \x1b[0m`)
-    console.log(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>\n")
+    console.log('>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>\n')
   } catch (error) {
-    console.error("Error getting answer:", error)
+    console.error('Error getting answer:', error)
   }
 }
 

@@ -1,5 +1,5 @@
-import fs from "fs"
-import Tesseract from "tesseract.js"
+import fs from 'fs'
+import Tesseract from 'tesseract.js'
 
 export const extractTextFromImage = async (
   imagePath: string,

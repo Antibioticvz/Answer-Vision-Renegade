@@ -1,14 +1,14 @@
-import axios from "axios"
+import axios from 'axios'
 
 export class LlamaService {
   constructor(
     private readonly endpoint: string,
-    private readonly headers = { "Content-Type": "application/json" }
+    private readonly headers = { 'Content-Type': 'application/json' }
   ) {}
 
   async getAnswerFromText(systemPrompt: string, text: string) {
     try {
-      console.log("\x1b[33m Making request to model: \x1b[0m")
+      console.log('\x1b[33m Making request to model: \x1b[0m')
 
       const { data } = await axios.post(
         this.endpoint,
@@ -25,7 +25,7 @@ export class LlamaService {
 
       return data.choices[0].text
     } catch (error) {
-      console.error("Error calling model:", error)
+      console.error('Error calling model:', error)
       throw error
     }
   }
