@@ -22,4 +22,4 @@ Thumbs.db
 
 # Images for development
 src/images/*
-eng.traineddata
+*.traineddata
