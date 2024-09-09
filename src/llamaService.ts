@@ -14,9 +14,9 @@ export class LlamaService {
         this.endpoint,
         {
           prompt: `${systemPrompt} ${text}`, // Input question
-          max_tokens: 100,
+          max_tokens: 750,
           temperature: 0.3,
-          top_k: 50,
+          top_k: 10,
           no_stop_token: true,
           output: { return_full_text: true },
         },
